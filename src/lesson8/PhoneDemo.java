@@ -6,8 +6,6 @@ public class PhoneDemo {
         Phone phone2 = new Phone("98603402385", "Apple");
         Phone phone3 = new Phone();
 
-//        phone2.number = ;
-//        phone2.model = ;
 //        phone2.weight = 9;
 //
 //        phone3.number = "09547558585";
@@ -21,7 +19,7 @@ public class PhoneDemo {
         System.out.println("Номер " + phone3.number + " модель " + phone3.model
                 + " вес " + phone3.weight + "\n");
 
-        phone1.receiveCall("Mama");
-        System.out.println(phone1.getNumber());
+        phone1.receiveCall("Maмa ");
+        System.out.print(phone1.getNumber());
     }
 }
