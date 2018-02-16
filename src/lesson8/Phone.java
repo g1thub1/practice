@@ -13,10 +13,9 @@ public class Phone {
     String model;
     double weight = 45;
 
-    Phone(String n, String m, double w) {
-        number = n;
-        model = m;
-        weight = w;
+    Phone(String number, String model, double weight) {
+        this(number, model);
+        this.weight = weight;
     }
 
     Phone(String n, String m) {
