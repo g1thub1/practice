@@ -7,6 +7,7 @@ package lesson8;
  * Добавить конструктор в класс Phone, который принимает на вход три параметра для инициализации переменных класса - number, model и weight.
  * Добавить конструктор, который принимает на вход два параметра для инициализации переменных класса - number, model.
  * Добавить конструктор без параметров.
+ * Добавьте в класс Phone перегруженный метод receiveCall, который принимает два параметра - имя звонящего и номер телефона звонящего.
  */
 public class Phone {
     String number;
@@ -26,8 +27,9 @@ public class Phone {
     Phone() {
     }
 
-    void receiveCall(String name) {
-        System.out.println("Звонит " + name);
+    void receiveCall(String name, String number) {
+        this.getNumber();
+        System.out.println("Звонит " + name + "с номером телефона " + number);
     }
 
     String getNumber() {

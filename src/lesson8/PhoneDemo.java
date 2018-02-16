@@ -13,7 +13,7 @@ public class PhoneDemo {
         System.out.println("Номер " + phone3.number + " модель " + phone3.model
                 + " вес " + phone3.weight + "\n");
 
-        phone1.receiveCall("Maмa ");
+        phone1.receiveCall("Maмa ", "88005553535" );
         System.out.print(phone1.getNumber());
     }
 }
