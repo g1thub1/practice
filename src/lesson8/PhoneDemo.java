@@ -1,8 +1,5 @@
 package lesson8;
 
-/**
- * Created by student on 12.02.2018.
- */
 public class PhoneDemo {
     public static void main(String[] args) {
         Phone phone1 = new Phone();
@@ -26,7 +23,7 @@ public class PhoneDemo {
         System.out.println("Номер " + phone2.number + " модель " + phone2.model
                 + " вес " + phone2.weight);
         System.out.println("Номер " + phone3.number + " модель " + phone3.model
-                + " вес " + phone3.weight);
+                + " вес " + phone3.weight + "\n");
 
         phone1.receiveCall("Mama");
         System.out.println(phone1.getNumber());
