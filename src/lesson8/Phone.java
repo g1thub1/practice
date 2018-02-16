@@ -11,12 +11,20 @@ package lesson8;
 public class Phone {
     String number;
     String model;
-    double weight;
+    double weight = 45;
 
     Phone(String n, String m, double w) {
         number = n;
         model = m;
         weight = w;
+    }
+
+    Phone(String n, String m) {
+        number = n;
+        model = m;
+    }
+
+    Phone() {
     }
 
     void receiveCall(String name) {
