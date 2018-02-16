@@ -27,5 +27,8 @@ public class PhoneDemo {
                 + " вес " + phone2.weight);
         System.out.println("Номер " + phone3.number + " модель " + phone3.model
                 + " вес " + phone3.weight);
+
+        phone1.receiveCall("Mama");
+        System.out.println(phone1.getNumber());
     }
 }
