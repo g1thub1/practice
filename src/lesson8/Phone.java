@@ -8,11 +8,14 @@ package lesson8;
  * Добавить конструктор, который принимает на вход два параметра для инициализации переменных класса - number, model.
  * Добавить конструктор без параметров.
  * Добавьте в класс Phone перегруженный метод receiveCall, который принимает два параметра - имя звонящего и номер телефона звонящего.
+ * Создать метод sendMessage в классе Phone с аргументами переменной длины.
+ * Данный метод принимает на вход номера телефонов, которым будет отправлено сообщение.
+ * Метод выводит на консоль номера этих телефонов.
  */
 public class Phone {
-    String number;
-    String model;
-    double weight = 45;
+    private String number;
+    private String model;
+    private double weight = 45;
 
     Phone(String number, String model, double weight) {
         this(number, model);
@@ -27,12 +30,39 @@ public class Phone {
     Phone() {
     }
 
+    public String getNumber() {
+        return number;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
     void receiveCall(String name, String number) {
         this.getNumber();
         System.out.println("Звонит " + name + "с номером телефона " + number);
     }
 
-    String getNumber() {
-        return number;
+    void sendMessage(String... numbers) {
+        System.out.println("Сообщение отправлено");
+        for (String number : numbers) {
+            System.out.println(number + " ");
+        }
     }
 }
