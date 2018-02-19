@@ -6,6 +6,8 @@ public class PhoneDemo {
         Phone phone2 = new Phone("98603402385", "Apple");
         Phone phone3 = new Phone();
 
+        System.out.println(Phone.getCount());
+
         System.out.println("Номер " + phone1.getNumber() + " модель " + phone1.getModel()
                 + " вес " + phone1.getWeight());
         System.out.println("Номер " + phone2.getNumber() + " модель " + phone2.getModel()
