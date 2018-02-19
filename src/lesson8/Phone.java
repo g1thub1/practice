@@ -16,6 +16,7 @@ public class Phone {
     private String number;
     private String model;
     private double weight = 45;
+    private static int count;
 
     Phone(String number, String model, double weight) {
         this(number, model);
@@ -25,9 +26,11 @@ public class Phone {
     Phone(String n, String m) {
         number = n;
         model = m;
+        count++;
     }
 
     Phone() {
+        count++;
     }
 
     public String getNumber() {
