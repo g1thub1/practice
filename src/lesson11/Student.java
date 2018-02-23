@@ -5,6 +5,7 @@ package lesson11;
  * Класс Student содержит переменные:
  * String firstName, lastName, group;
  * double averageMark - содержащую среднюю оценку.
+ * Создать переменную типа Student, которая ссылается на объект типа  Aspirant.
  */
 public class Student {
     private String firstName, lastName, group;
