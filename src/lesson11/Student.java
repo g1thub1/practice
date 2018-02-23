@@ -10,6 +10,7 @@ package lesson11;
 public class Student {
     private String firstName, lastName, group;
     private double avgMark;
+    Student student = new Aspirant("Natalia", "Portman", "43", 43, "MyWork");
 
     public Student(String firstName, String lastName, String group, double avgMark) {
         this.firstName = firstName;
