@@ -29,13 +29,12 @@ public class Phone {
         count++;
     }
 
-    public static int getCount() {
-        return count;
+    Phone() {
+        count++;
     }
 
-    Phone() {
-
-        count++;
+    public static int getCount() {
+        return count;
     }
 
     public String getNumber() {
