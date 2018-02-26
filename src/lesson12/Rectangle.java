@@ -27,6 +27,6 @@ public class Rectangle extends Shape {
     }
 
     public void draw() {
-        System.out.println("Рисую "+ getColor()+"прямоугольник "  + " с координатами " + x + " " + y);
+        System.out.println("Рисую "+ getColor()+"прямоугольник "  + "с координатами " + x + " " + y);
     }
 }
