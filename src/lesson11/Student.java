@@ -23,10 +23,10 @@ public class Student {
     }
 
     public double getScholarship() {
-        if (avgMark == 5.6) {
+        if (avgMark == 5) {
             return 100;
         } else {
-            return 180;
+            return 80;
         }
     }
 

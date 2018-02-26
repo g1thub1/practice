@@ -17,7 +17,7 @@ public class Aspirant extends Student {
     }
 
     public double getScholarship() {
-        if (getAvgMark() == 9.6) {
+        if (getAvgMark() == 4) {
             return 200;
         } else {
             return 180;
