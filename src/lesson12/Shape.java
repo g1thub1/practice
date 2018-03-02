@@ -6,6 +6,8 @@ package lesson12;
  * Классы Circle, Rectangle содержат координаты точек.
  * Создать массив содержащий эти фигуры.
  * В цикле нарисовать их (вызвать метод draw).
+ * Добавить методы equals() и hashCode() для классов Shape, Circle, Rectangle.
+ * Добавить метод toString() для классов Shape, Circle, Rectangle.
  */
 public abstract class Shape {
     private String color;
@@ -21,8 +23,14 @@ public abstract class Shape {
     }
 
     public String getColor() {
-
         return color;
+    }
+
+    @Override
+    public String toString() {
+        return "Shape{" +
+                "color='" + color + '\'' +
+                '}';
     }
 
     @Override

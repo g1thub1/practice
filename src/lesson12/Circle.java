@@ -21,6 +21,13 @@ public class Circle extends Shape {
     }
 
     @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                "} " + super.toString();
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

@@ -39,6 +39,14 @@ public class Rectangle extends Shape {
     }
 
     @Override
+    public String toString() {
+        return "Rectangle{" +
+                "x=" + x +
+                ", y=" + y +
+                "} " + super.toString();
+    }
+
+    @Override
     public int hashCode() {
         int result = super.hashCode();
         result = 31 * result + x;
@@ -47,6 +55,6 @@ public class Rectangle extends Shape {
     }
 
     public void draw() {
-        System.out.println("Рисую "+ getColor()+"прямоугольник "  + "с координатами " + x + " " + y);
+        System.out.println("Рисую " + getColor() + "прямоугольник " + "с координатами " + x + " " + y);
     }
 }

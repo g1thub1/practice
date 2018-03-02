@@ -16,7 +16,10 @@ public class ShapeDemo {
             shape1.draw();
         }
 
-        System.out.println("Circle " + circle1.equals(circle2));
+        System.out.println("\n" + "Circle " + circle1.equals(circle2));
         System.out.println("Rectangle " + rectangle1.equals(rectangle2));
+
+        System.out.println("\n" + rectangle);
+        System.out.println(circle);
     }
 }
