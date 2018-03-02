@@ -19,4 +19,22 @@ public class Circle extends Shape {
     public void draw() {
         System.out.println("Рисую " + getColor() + "круг " + "с радиусом " + radius);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        Circle circle = (Circle) o;
+
+        return radius == circle.radius;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + radius;
+        return result;
+    }
 }
