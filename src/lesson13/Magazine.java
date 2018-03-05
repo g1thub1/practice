@@ -3,7 +3,14 @@ package lesson13;
 public class Magazine implements Printable {
     private String name;
 
-    @Override
+    public static void printMagazines(Printable[] printables) {
+        for (Printable printable : printables) {
+            if (printable instanceof Magazine) {
+                System.out.println(((Magazine) printable).getName());
+            }
+        }
+    }
+
     public void print() {
         System.out.println("Печатаю интересный журнал " + getName());
     }

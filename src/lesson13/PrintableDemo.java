@@ -12,6 +12,9 @@ public class PrintableDemo {
         for (Printable printable : printables) {
             printable.print();
         }
+
+        Book.printBooks(printables);
+        Magazine.printMagazines(printables);
     }
 }
 
