@@ -5,7 +5,7 @@ public class Magazine implements Printable {
 
     @Override
     public void print() {
-        System.out.println("Печатаю журнал " + getName());
+        System.out.println("Печатаю интересный журнал " + getName());
     }
 
     public Magazine(String name) {
