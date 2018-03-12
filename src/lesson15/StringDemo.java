@@ -9,12 +9,18 @@ package lesson15;
 public class StringDemo {
     public static void main(String[] args) {
         varifyString("I like Java!!");
+        strLength("I like abc");
         charAt();
     }
 
     private static void charAt() {
         char ch = "I like Java!!".charAt(12);
         System.out.println(ch);
+    }
+
+    private static void strLength(String str) {
+        int len = str.length() - 1;
+        System.out.println(str.charAt(len));
     }
 
     public static void varifyString(String str) {
