@@ -12,7 +12,7 @@ public class DoubleDemo {
         Double double1 = new Double((double) 2.5);
         Double double2 = new Double("2.55");
         Double double6 = 3.35;
-        
+
         System.out.println(double1);
         System.out.println(double2);
         System.out.println(double6);
