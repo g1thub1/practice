@@ -7,6 +7,7 @@ package lesson14;
  * Используем оператор switch.
  * В цикле распечатать  все времена года. Используем метод values().
  * Создать  переменную содержащую ваше любимое время года с использованием метода valueOf().
+ *
  */
 public class SeasonDemo {
     public static void main(String[] args) {
@@ -25,7 +26,8 @@ public class SeasonDemo {
     private static void values() {
         Season[] seas = Season.values();
         for (Season s : seas) {
-            System.out.println(s);
+            System.out.println(s + " " + s.getAvgTemperature());
+            System.out.println(s.getDescription());
         }
     }
 
