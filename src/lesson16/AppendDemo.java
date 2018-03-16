@@ -8,6 +8,8 @@ package lesson16;
  * Используем метод StringBuilder.append().
  * Замените символ “=” на слово “равно”.
  * Используйте методы StringBuilder.insert(), StringBuilder.deleteCharAt().
+ * Замените символ “=” на слово “равно”.
+ * Используйте методы StringBuilder.replace().
  */
 public class AppendDemo {
     public static void main(String[] args) {
@@ -19,7 +21,7 @@ public class AppendDemo {
         StringBuilder strbld = new StringBuilder();
 
         result = strbld.append(a).append(" + ").append(b).append(" = ").append(a + b).append("\n").toString();
-        
+
         strbld.append(a);
         strbld.append(" - ");
         strbld.append(b);
@@ -31,13 +33,11 @@ public class AppendDemo {
 
         int pos = 0;
         while ((pos = strbld.indexOf("=")) != -1) {
-            strbld.deleteCharAt(pos);
-            strbld.insert(pos, "равно");
+            /*strbld.deleteCharAt(pos);
+            strbld.insert(pos, "равно");*/
+            strbld.replace(pos, pos + 1, "равно");
+
         }
         System.out.println(strbld);
-
-
-
-
     }
 }
