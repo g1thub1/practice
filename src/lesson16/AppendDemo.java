@@ -29,14 +29,13 @@ public class AppendDemo {
         strbld.append(a - b);
         strbld.append("\n");
 
-        System.out.println(strbld.append(a).append(" * ").append(b).append(" = ").append(a * b));
+        System.out.println(strbld.append(a).append(" * ").append(b).append(" = ").append(a * b).append("\n"));
 
         int pos = 0;
         while ((pos = strbld.indexOf("=")) != -1) {
             /*strbld.deleteCharAt(pos);
             strbld.insert(pos, "равно");*/
             strbld.replace(pos, pos + 1, "равно");
-
         }
         System.out.println(strbld);
     }
