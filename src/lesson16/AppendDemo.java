@@ -6,6 +6,8 @@ package lesson16;
  * 3 – 56 = -53
  * 3 * 56 = 168
  * Используем метод StringBuilder.append().
+ * Замените символ “=” на слово “равно”.
+ * Используйте методы StringBuilder.insert(), StringBuilder.deleteCharAt().
  */
 public class AppendDemo {
     public static void main(String[] args) {
@@ -16,9 +18,8 @@ public class AppendDemo {
         String result;
         StringBuilder strbld = new StringBuilder();
 
-        result = strbld.append(a).append(" + ").append(b).append(" = ").append(a + b).toString();
-        System.out.println(result + "\n");
-
+        result = strbld.append(a).append(" + ").append(b).append(" = ").append(a + b).append("\n").toString();
+        
         strbld.append(a);
         strbld.append(" - ");
         strbld.append(b);
@@ -27,5 +28,16 @@ public class AppendDemo {
         strbld.append("\n");
 
         System.out.println(strbld.append(a).append(" * ").append(b).append(" = ").append(a * b));
+
+        int pos = 0;
+        while ((pos = strbld.indexOf("=")) != -1) {
+            strbld.deleteCharAt(pos);
+            strbld.insert(pos, "равно");
+        }
+        System.out.println(strbld);
+
+
+
+
     }
 }
