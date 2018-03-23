@@ -11,10 +11,10 @@ package lesson18;
  * создать экземпляр класса Query и вызвать метод printToLog() используя конструкцию user.new Query();
  * создать экземпляр класса Query и вызвать метод printToLog() используя конструкцию new User().new Query();
  */
-public class UserDemo {
+public class User {
     private String login, password;
 
-    public UserDemo(String login, String password) {
+    public User(String login, String password) {
         this.login = login;
         this.password = password;
     }
@@ -41,12 +41,17 @@ public class UserDemo {
         this.password = password;
     }
 
+    public void createQuery(){
+        Query query = new Query();
+        query.printToLog();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        UserDemo userDemo = (UserDemo) o;
+        User userDemo = (User) o;
 
         if (login != null ? !login.equals(userDemo.login) : userDemo.login != null) return false;
         return password != null ? password.equals(userDemo.password) : userDemo.password == null;
@@ -57,5 +62,10 @@ public class UserDemo {
         int result = login != null ? login.hashCode() : 0;
         result = 31 * result + (password != null ? password.hashCode() : 0);
         return result;
+    }
+
+    public static void main(String[] args) {
+        User user = new User("login1", "password1");
+        user.createQuery();
     }
 }
