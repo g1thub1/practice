@@ -21,7 +21,7 @@ public class User {
 
     public class Query {
         public void printToLog() {
-            System.out.printf("Пользователь %s с паролем" + " %s отправил запрос", login, password);
+            System.out.printf("Пользователь %s с паролем %s отправил запрос \n", login, password);
         }
     }
 
@@ -67,5 +67,11 @@ public class User {
     public static void main(String[] args) {
         User user = new User("login1", "password1");
         user.createQuery();
+
+        User.Query query = user.new Query();
+        query.printToLog();
+
+        User.Query query2 = new User("login2","qwerty").new Query();
+        query2.printToLog();
     }
 }
