@@ -24,5 +24,14 @@ public class ArrayListDemo {
         for (HeavyBox1 box : list) {
             System.out.println("Element " + box);
         }
+        HeavyBox1 firstBox = list.get(0);
+        firstBox.weight = firstBox.weight + 1;
+
+        list.set(0, firstBox);
+        list.remove(list.size() - 1);//Удалить последний ящик
+        System.out.println(list);
+
+        list.clear();//очистка коллекции
+        System.out.println(list);
     }
 }
