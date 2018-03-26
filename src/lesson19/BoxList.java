@@ -3,7 +3,6 @@ package lesson19;
 /**
  * Получить массив содержащий ящики из коллекции тремя способами и вывести на консоль.
  */
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
