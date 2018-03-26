@@ -7,7 +7,13 @@ public class HeavyBox1 extends Box6 {
         super(width, height, depth);
         this.weight = weight;
     }
+
     public HeavyBox1() {
         this.weight = -1;
+    }
+
+    @Override
+    public String toString() {
+        return "HeavyBox1{" + "weight=" + weight + "} " + super.toString();
     }
 }
