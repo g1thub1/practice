@@ -2,7 +2,7 @@ package lesson18;
 
 /**
  * Создать массив содержащий 4 игрушки. Статический метод, который принимает на вход массив игрушек и считает их стоимость.
- * play no static metod  выводитт на  экран действие
+ * play no static metod выводитт на экран действие
  * нужно подсчитать общее количество игрушек static count
  */
 public class Toy {
@@ -61,12 +61,22 @@ public class Toy {
     }
 
     public static int calculatePrice(Toy[] toys) {
-        return 0;
+        int fullPrice = 0;
+        for (Toy t : toys) {
+            fullPrice += t.price;
+        }
+        return fullPrice;
+    }
+
+    public static void play() {
+        System.out.println();
     }
 
     public static void main(String[] args) {
-        Toy toy1 = new Toy(18, "doll Masha", "play");
-        Toy toy2 = new Toy(19, "Car", "run");
-        Toy toy3 = new Toy(20, "airplane", "fly");
+        Toy[] toys = {
+                new Toy(5,"doll","play"),
+                new Toy(7,"car","drive"),
+                new Toy(9,"plane","fly")
+        };
     }
 }

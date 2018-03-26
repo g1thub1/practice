@@ -10,8 +10,11 @@ package lesson13;
  * который выводит на консоль названия только журналов.
  * Создать статический метод printBooks(Printable[] printable) в классе Book, который выводит на консоль названия только книг.
  * Используем оператор instanceof.
+ * Создать анонимный класс расширяющий интерфейс Printable.
+ * Вызвать его метод print().
  */
 public interface Printable {
     void print();
+
 }
 

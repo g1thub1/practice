@@ -2,6 +2,18 @@ package lesson13;
 
 public class PrintableDemo {
     public static void main(String[] args) {
+        getPrintable();
+
+        Printable printable = new Printable() {
+            @Override
+            public void print() {
+                System.out.println("Smth");
+            }
+        };
+        printable.print();
+    }
+
+    private static void getPrintable() {
         Book book1 = new Book("Война и мир");
         Book book2 = new Book("Идиот");
 
