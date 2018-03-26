@@ -1,10 +1,6 @@
 package lesson19;
 
-import lesson12.Shape;
-import lesson13.Book;
 import lesson18.Toy;
-import lesson8.Phone;
-
 /**
  * Создать обобщенный класс с тремя параметрами (T, V, K).
  * Класс содержит три переменные типа (T, V, K).
